@@ -27,4 +27,4 @@ let update msg model : Model * Cmd<Msg> =
   | Scissor, Rock
     -> { model with Lost = model.Lost + 1; Result = "You lose!" }, [] // You lose
   | _ 
-    -> { model with Result = "You draw!" }, [] // You lose
+    -> { model with Result = "Draw!" }, [] // You draw
